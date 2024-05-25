@@ -1,6 +1,3 @@
-import { Button } from "@/components/ui/button";
-import React from "react";
-import SVGlogo from "../assets/logo.svg";
 import Navbar from "./components/NavBar/Navbar";
 import Hero from "./components/Hero/Hero";
 import { Frame } from "./components/Experience/Frame";

@@ -4,12 +4,11 @@ import {
   SiTypescript,
   SiTailwindcss,
   SiMongodb,
-  SiGithub,
-  SiExpress,
+
 } from "react-icons/si";
 import { BsStripe } from "react-icons/bs";
 import { FaNodeJs } from "react-icons/fa";
-import { Package, User, Globe, Monitor, Server } from "lucide-react";
+import {  User, Globe, Monitor, Server } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { AnimatedBeam } from "@/components/ui/animated-beam";
 import React, { forwardRef, useRef } from "react";

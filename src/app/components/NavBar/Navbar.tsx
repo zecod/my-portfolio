@@ -1,5 +1,5 @@
 import React from "react";
-import SVGlogo from "../assets/logo.svg";
+
 import { SheetSide } from "./Sheet";
 
 const Navbar = () => {

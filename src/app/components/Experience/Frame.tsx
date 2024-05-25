@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
-import { DraftingCompass, Zap, ShieldCheck, Activity } from "lucide-react";
-import { SonnerDemo } from "../Sonner";
+import { DraftingCompass} from "lucide-react";
+
 import { AnimatedBeamDemo } from "./Animated";
 
 gsap.registerPlugin(ScrollTrigger);

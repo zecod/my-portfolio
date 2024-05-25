@@ -5,8 +5,6 @@ import VercellImg from "../../../assets/vercelli-screen.png";
 import RonaLi from "../../../assets/rona-l.webp";
 import ltcAI from "../../../assets/ltc-screen.png";
 import LexaMail from "../../../assets/lexa-mail.webp";
-import { BentoGridItem } from "@/components/bento-grid";
-import { Button } from "@/components/ui/button";
 export const projects = [
   {
     title: "Vercelli",

@@ -1,5 +1,5 @@
 import React from "react";
-import { DraftingCompass, User } from "lucide-react";
+import { User } from "lucide-react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";

@@ -1,8 +1,5 @@
-import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
-import React from "react";
 import { DialogContact } from "./DialogContact";
-import { useToast } from "@/components/ui/use-toast";
 import { ShareMail } from "./ShareMail";
 export const Contact = () => {
   return (

@@ -1,4 +1,3 @@
-import React from "react";
 import { GoHome } from "../GoHome";
 import LexaMailImg from "../../../../assets/lexa-mail.webp";
 import {

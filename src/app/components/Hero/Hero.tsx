@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
-import WorldSvg from "../../assets/world.svg";
+import { Highlight } from "@/components/ui/hero-highlight";
+
 
 const Hero = () => {
   const [showHighlight, setShowHighlight] = useState(false);
