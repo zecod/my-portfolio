@@ -46,7 +46,7 @@ export const AppstoreMincraft = () => {
   }, [isDownloading]);
 
   return (
-    <div className="w-full border rounded-xl p-4 ">
+    <div className="w-full border rounded-xl p-4 hidden md:block">
       <div className="flex gap-4 justify-between items-center">
         <div className="flex gap-4">
           <img
