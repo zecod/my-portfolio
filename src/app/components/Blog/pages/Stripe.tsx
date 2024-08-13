@@ -2,7 +2,7 @@ import { NavArticle } from "../components/elemnts/NavArticle";
 import { Badge } from "@/components/ui/badge";
 import { BreadcrumbUrl } from "../components/BreadCrumb";
 import { SyntaxCode } from "../../Experience/Syntax";
-import { Phone } from "../components/elemnts/Phone";
+// import { Phone } from "../components/elemnts/Phone";
 import { SepaIcon, StripeModal } from "../components/elemnts/StripeModal";
 import StripeImg from "../../../../assets/stripe.png";
 
@@ -100,7 +100,7 @@ export const StripeSEPAFraud = () => {
                 </p>
               </div>
 
-              <Phone />
+              {/* <Phone /> */}
             </div>
           </div>
 
