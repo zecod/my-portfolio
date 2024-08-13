@@ -1,5 +1,5 @@
-import React from "react";
 import { Github, Youtube, Linkedin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -13,9 +13,17 @@ export const Footer = () => {
         </div>
 
         <div className="flex items-center gap-3 text-zinc-400">
-          <Github className="transition-all hover:text-white cursor-pointer" />
-          <Youtube className="transition-all hover:text-white cursor-pointer" />
-          <Linkedin className="transition-all hover:text-white cursor-pointer" />
+          <Link to={"https://www.youtube.com/@lexasai"} target="_blank">
+            <Github className="transition-all hover:text-white cursor-pointer" />
+          </Link>
+          <Link to={"https://github.com/zecod"} target="_blank">
+            {" "}
+            <Youtube className="transition-all hover:text-white cursor-pointer" />
+          </Link>
+          <Link to={"https://www.linkedin.com/in/yasinel"} target="_blank">
+            {" "}
+            <Linkedin className="transition-all hover:text-white cursor-pointer" />
+          </Link>
         </div>
       </footer>
     </div>

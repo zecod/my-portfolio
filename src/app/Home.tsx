@@ -1,16 +1,16 @@
 import Navbar from "./components/NavBar/Navbar";
 import Hero from "./components/Hero/Hero";
-import { Frame } from "./components/Experience/Frame";
-import { ChevronDown } from "lucide-react";
 import gsap from "gsap";
+import { Frame } from "./components/Experience/Frame";
+
 import { useGSAP } from "@gsap/react";
 import { Projects } from "./components/Projects/Projects";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import { About } from "./components/About/About";
 import { Contact } from "./components/Contact/Contact";
 import { Footer } from "./components/Footer/Footer";
-
 import { Hobby } from "./components/Experience/Hobby";
+import { Security } from "./components/Experience/Security";
 
 const Home = () => {
   useGSAP(() => {
@@ -30,15 +30,14 @@ const Home = () => {
       </div>
       <div className="container h-screen flex flex-col">
         <Hero />
-        <div className="hidden svg-bottom w-full md:flex items-center justify-center h-auto mt-40">
-          <ChevronDown />
-        </div>
+ 
       </div>
       <div className="container">
         <TracingBeam>
           <About />
           <Hobby />
           <Frame />
+          <Security />
           <Projects />
           <Contact />
         </TracingBeam>

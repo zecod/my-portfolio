@@ -2,10 +2,8 @@ import { CopyIcon } from "@radix-ui/react-icons";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
-
   DialogContent,
   DialogDescription,
-
   DialogHeader,
   DialogTitle,
   DialogTrigger,
@@ -13,22 +11,26 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useState, useEffect } from "react";
-import { Check, Mail } from "lucide-react";
+import { AtSign, Check } from "lucide-react";
 
 export function ShareMail() {
   const [isCopied, setIsCopied] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => setIsCopied(false), 1000);
+    if (isCopied) {
+      const time = setTimeout(() => setIsCopied(false), 1000);
+      return () => clearTimeout(time);
+    }
   }, [isCopied]);
   return (
     <Dialog>
       <DialogTrigger asChild>
         <Button
-          className="w-[140px] h-[50px] rounded-xl text-md flex items-center gap-2"
-          variant={"outline"}
+          className="rounded-xl flex items-center gap-2 my-4"
+          variant={"default"}
+          size={"lg"}
         >
-          <Mail className="w-6 h-6"/>
+          <AtSign size={22} />
           Email Me
         </Button>
       </DialogTrigger>
@@ -44,7 +46,11 @@ export function ShareMail() {
             <Label htmlFor="email" className="sr-only">
               Email
             </Label>
-            <Input id="email" defaultValue="yassine@verceli.dev" readOnly />
+            <Input
+              id="email"
+              defaultValue="yassineamine788@gmail.com"
+              readOnly
+            />
           </div>
           <Button
             type="submit"
@@ -52,7 +58,7 @@ export function ShareMail() {
             className="px-3"
             onClick={() => {
               navigator.clipboard
-                .writeText("yassine@verceli.dev")
+                .writeText("yassineamine788@gmail.com")
                 .then(() => {
                   setIsCopied(true);
                 })

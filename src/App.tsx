@@ -1,22 +1,30 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./app/Home";
-import Vercelli from "./app/components/Projects/web/Vercelli";
-import Lexamail from "./app/components/Projects/web/Lexamail";
+import Notfound from "./app/404";
+import { ThemeProvider } from "./components/ui/theme-provider";
+import Blog from "./app/components/Blog/Blog";
 import "./App.css";
-import RonaLi from "./app/components/Projects/web/Ronali";
-import LtcAI from "./app/components/Projects/web/Ltcai";
+import { Azure } from "./app/components/Blog/pages/Azure";
+import { NetflixVulnerability } from "./app/components/Blog/pages/Netflix";
+import { AppleVulnerability } from "./app/components/Blog/pages/Apple";
+import { StripeSEPAFraud } from "./app/components/Blog/pages/Stripe";
 
 const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/vercelli" element={<Vercelli />} />
-        <Route path="/lexamail" element={<Lexamail />} />
-        <Route path="/ronali" element={<RonaLi />} />
-        <Route path="/ltcai" element={<LtcAI />} />
-      </Routes>
-    </Router>
+    <ThemeProvider defaultTheme="light" storageKey="ui-theme">
+      <Router>
+        <Routes>
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/azure" element={<Azure />} />
+
+          <Route path="/blog/netflix" element={<NetflixVulnerability />} />
+          <Route path="/blog/apple" element={<AppleVulnerability />} />
+          <Route path="/blog/stripe" element={<StripeSEPAFraud />} />
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<Notfound />} />
+        </Routes>
+      </Router>
+    </ThemeProvider>
   );
 };
 
