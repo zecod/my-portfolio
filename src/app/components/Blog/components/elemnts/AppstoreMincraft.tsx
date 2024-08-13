@@ -11,7 +11,7 @@ import { useTheme } from "@/components/ui/theme-provider";
 
 export const AppstoreMincraft = () => {
   const [isDownloading, setDownloading] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
 
   const [isLoading, setIsLoading] = useState(false);
   const [isFinished, setIsFinished] = useState(false);
