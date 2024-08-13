@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { PiFlagBannerFill } from "react-icons/pi";
 import { LaurelLeft, LaurelRight } from "./Icons.tsx";
-import { AiOutlineLoading3Quarters, AiOutlineStop } from "react-icons/ai";
+import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import { FaStop } from "react-icons/fa6";
@@ -13,9 +13,6 @@ export const AppstoreMincraft = () => {
   const [isDownloading, setDownloading] = useState(false);
   const { theme, setTheme } = useTheme();
 
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  };
   const [isLoading, setIsLoading] = useState(false);
   const [isFinished, setIsFinished] = useState(false);
   const [progress, setProgress] = useState(13);

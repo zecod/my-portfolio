@@ -1,13 +1,6 @@
 import { Badge } from "@/components/ui/badge";
-import { useTheme } from "@/components/ui/theme-provider";
 
 export const StripeCard = () => {
-  const { theme, setTheme } = useTheme();
-
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  };
-
   return (
     <a
       className="group flex flex-col h-full border hover:shadow-lg transition-all duration-300 rounded-xl p-5 dark:border-neutral-700 dark:hover:border-transparent gap-5"
