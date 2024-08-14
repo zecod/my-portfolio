@@ -13,10 +13,10 @@ export const Footer = () => {
         </div>
 
         <div className="flex items-center gap-3 text-zinc-400">
-          <Link to={"https://www.youtube.com/@lexasai"} target="_blank">
+          <Link to={"https://github.com/zecod"} target="_blank">
             <Github className="transition-all hover:text-white cursor-pointer" />
           </Link>
-          <Link to={"https://github.com/zecod"} target="_blank">
+          <Link to={"https://www.youtube.com/@lexasai"} target="_blank">
             {" "}
             <Youtube className="transition-all hover:text-white cursor-pointer" />
           </Link>
