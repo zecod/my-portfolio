@@ -169,12 +169,7 @@ export const AppleVulnerability = () => {
           <div className="space-y-4">
             <h2 className="text-2xl font-bold">Conclusion</h2>
             <p className="font-light">
-              The scenario described highlights a significant vulnerability.
-              Bypassing CVV verification compromises the security of credit card
-              transactions on the Apple App Store. Although Apple has since
-              resolved this issue, it underscores the necessity for robust
-              security measures and regular audits to promptly identify and
-              mitigate such risks.
+              The scenario I described highlights a significant vulnerability. Bypassing CVV verification compromised the security of credit card transactions on the Apple App Store. Although Apple has since resolved this issue, it underscores the necessity for robust security measures and regular audits to promptly identify and mitigate such risks.
             </p>
             <p className="font-light">
               At the time, I was unaware of the bounty program as my focus was
