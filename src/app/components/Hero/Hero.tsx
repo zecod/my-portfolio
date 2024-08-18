@@ -4,7 +4,7 @@ import BlurFade from "@/components/magicui/blur-fade";
 
 const Hero = () => {
   return (
-    <div className=" jersey-10-regular h-full flex flex-col mt-40 gap-2 ">
+    <div className=" jersey-10-regular h-full flex flex-col md:mt-40 mt-20 gap-2 ">
       <BlurFade delay={0.25} inView>
         <h2 className="name-tittle  text-2xl md:text-3xl text-zinc-500">
           Hello!

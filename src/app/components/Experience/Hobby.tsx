@@ -16,7 +16,7 @@ export const Hobby = () => {
         </h1>
       </BlurFade>
       <BlurFade delay={0.45} inView>
-        <p className="text-md text-zinc-500 mb-5 stagger-hobby leading-relaxed tracking-widest">
+        <p className="text-md text-zinc-500 mb-5 stagger-hobby leading-relaxed tracking-wider">
           I dedicate my spare time to exploring mobile development with Swift UI
           and React Native. Additionally, I am starting to learn Python and PHP,
           embracing the challenges of being a beginner. I am also passionate

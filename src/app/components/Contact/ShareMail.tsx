@@ -11,7 +11,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useState, useEffect } from "react";
-import { AtSign, Check } from "lucide-react";
+import { Check } from "lucide-react";
 
 export function ShareMail() {
   const [isCopied, setIsCopied] = useState(false);
@@ -30,7 +30,6 @@ export function ShareMail() {
           variant={"default"}
           size={"lg"}
         >
-          <AtSign size={22} />
           Email Me
         </Button>
       </DialogTrigger>

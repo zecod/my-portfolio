@@ -55,7 +55,7 @@ export const Frame = () => {
         </h1>
       </BlurFade>
       <BlurFade delay={0.35} inView>
-        <p className="stagger-intro text-md text-zinc-500 mb-5 leading-relaxed tracking-widest">
+        <p className="stagger-intro text-md text-zinc-500 mb-5 leading-relaxed tracking-wider">
           I use modern technologies like React, Node.js, and MongoDB in my web
           development projects to create functional, fast, and user-friendly
           websites. React helps me build interactive interfaces efficiently,

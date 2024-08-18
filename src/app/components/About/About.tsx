@@ -1,6 +1,7 @@
 import { User } from "lucide-react";
 import { FaApple } from "react-icons/fa";
 import BlurFade from "@/components/magicui/blur-fade";
+import { SiApple } from "react-icons/si";
 
 export const About = () => {
   return (
@@ -17,7 +18,7 @@ export const About = () => {
         </h1>
       </BlurFade>
       <BlurFade delay={0.45} inView>
-        <p className="text-md text-zinc-500 mb-5 leading-relaxed tracking-widest">
+        <p className="text-md text-zinc-500 mb-5 leading-relaxed tracking-wider">
           Hey, my name is Yassine, and I use Yass as my nickname across social
           media. I’m a full-stack web developer based in Italy. With a strong
           background in both front-end and back-end technologies, I specialize
@@ -31,7 +32,7 @@ export const About = () => {
         </p>
       </BlurFade>
       <BlurFade delay={0.35} inView>
-        <h2 className="text-md text-zinc-500 leading-relaxed tracking-widest">
+        <h2 className="text-md text-zinc-500 leading-relaxed tracking-wider">
           Companies Where I've Found Vulnerabilities:
         </h2>
       </BlurFade>
@@ -50,20 +51,20 @@ export const About = () => {
               className="grayscale aspect-auto transition-all hover:grayscale-0"
             />
           </a>
-          <a
-            href="https://www.apple.com"
-            target="_blank"
-            className="cursor-pointer"
-          >
-            <FaApple className="text-zinc-500 hover:text-black" size={50} />
-          </a>
+
           <a href="https://azure.microsoft.com/" target="_blank">
             <img
               src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-ar21.svg"
               className="grayscale aspect-auto transition-all hover:grayscale-0"
             />
           </a>
-
+          <a
+            href="https://www.apple.com"
+            target="_blank"
+            className="cursor-pointer"
+          >
+            <SiApple className="text-neutral-500  hover:text-black" size={50} />
+          </a>
           <a href="https://www.enel.it/" target="_blank">
             <img
               src="https://www.enel.com/etc.clientlibs/enel-common/clientlibs/clientlib-bundle/resources/img/logo/logo.svg"

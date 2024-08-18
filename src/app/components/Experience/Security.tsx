@@ -18,7 +18,7 @@ export const Security = () => {
         </h1>
       </BlurFade>
       <BlurFade delay={0.45} inView>
-        <p className="text-md text-zinc-500 mb-5 leading-relaxed tracking-widest">
+        <p className="text-md text-zinc-500 mb-5 leading-relaxed tracking-wider">
           Securing the web is essential to protect sensitive information,
           maintain user trust, and prevent malicious attacks. By implementing
           best security practices, we can ensure the safety and integrity of web
@@ -26,7 +26,7 @@ export const Security = () => {
         </p>
       </BlurFade>
       <BlurFade delay={0.55} inView>
-        <p className="text-md text-zinc-500 mb-5 leading-relaxed tracking-widest">
+        <p className="text-md text-zinc-500 mb-5 leading-relaxed tracking-wider">
           During my security research activities, I discovered a significant
           vulnerability caused by a simple issue: deleting the disabled
           attribute from a button. This action bypassed the 3D authentication,

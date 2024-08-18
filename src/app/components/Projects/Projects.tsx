@@ -12,9 +12,9 @@ export const Projects = () => {
       <h1 className="text-2xl font-bold leading-relaxed tracking-widest">
         Take a Look at My Projects
       </h1>
-      <p className="text-md text-zinc-500 mb-5 leading-relaxed tracking-widest">
+      <p className="text-md text-zinc-500 mb-5 leading-relaxed tracking-wider">
         Over the past two years, I've developed numerous full-stack projects,
-        culminating in my latest creation, <strong>Vercelli.</strong>
+        culminating in my latest creation, <strong>Verceli.</strong>
       </p>
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 relative">

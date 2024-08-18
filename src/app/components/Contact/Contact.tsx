@@ -16,7 +16,7 @@ export const Contact = () => {
       <h1 className="text-4xl font-bold leading-relaxed tracking-widest">
         Let's Connect!
       </h1>
-      <p className="stagger-intro text-md text-zinc-500 mb-5 leading-relaxed tracking-widest">
+      <p className="stagger-intro text-md text-zinc-500 mb-5 leading-relaxed tracking-wider">
         I'm really looking forward to diving into fresh projects and bringing my
         skills to the table. If you believe I could be a good match for your
         team, don't hesitate to reach out. I'm here and ready to assist you with

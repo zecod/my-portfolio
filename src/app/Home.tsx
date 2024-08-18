@@ -30,7 +30,6 @@ const Home = () => {
       </div>
       <div className="container h-screen flex flex-col">
         <Hero />
- 
       </div>
       <div className="container">
         <TracingBeam>
