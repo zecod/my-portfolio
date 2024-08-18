@@ -1,5 +1,4 @@
 import { User } from "lucide-react";
-import { FaApple } from "react-icons/fa";
 import BlurFade from "@/components/magicui/blur-fade";
 import { SiApple } from "react-icons/si";
 

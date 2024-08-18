@@ -142,6 +142,4 @@ const projectData = [
   },
 ];
 
-
-
 export { projectData };

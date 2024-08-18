@@ -14,6 +14,7 @@ interface Project {
   techStack: { icon: ReactNode; name: string }[];
   features: string[];
   ytLink: string | null;
+  img?: string;
   ui: {
     title: string;
     description: string;
@@ -176,9 +177,16 @@ const DrawerDialog: React.FC<{ item: Project }> = ({ item }) => {
                 <div className="mb-5">
                   {" "}
                   <section className="space-y-5">
-                    <h1 className="font-bold text-3xl leading-relaxed tracking-widest">
-                      {item.title}
-                    </h1>
+                    <div className="flex items-center justify-between">
+                      <h1 className="font-bold text-3xl leading-relaxed tracking-widest">
+                        {item.title}
+                      </h1>
+                      {item.ytLink == null && (
+                        <div className="text-yellow-500 text-xs rounded-full p-2">
+                          in-development
+                        </div>
+                      )}
+                    </div>
                     <p className="text-zinc-500 leading-relaxed tracking-tight">
                       {item.description}
                     </p>
