@@ -18,7 +18,7 @@ export const About = () => {
       </BlurFade>
       <BlurFade delay={0.45} inView>
         <p className="text-md text-zinc-500 mb-5 leading-relaxed tracking-wider">
-          Hi, I'm Yassine, but I go by Yass online. I'm a full-stack web developer living in Italy. I work on both front-end and back-end development to build solid and efficient web applications. I’m also interested in cybersecurity, especially in finding vulnerabilities in large companies' systems. I enjoy learning new technologies to improve my projects and keep them secure.
+          Hi, I'm Yassine, but I go by Yass. I'm a full-stack web developer living in Italy. I work on both front-end and back-end development to build solid and efficient web applications. I’m also interested in cybersecurity, especially in finding vulnerabilities in large companies' systems. I enjoy learning new technologies to improve my projects and keep them secure.
         </p>
       </BlurFade>
       <BlurFade delay={0.35} inView>
