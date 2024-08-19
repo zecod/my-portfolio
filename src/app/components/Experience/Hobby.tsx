@@ -17,16 +17,7 @@ export const Hobby = () => {
       </BlurFade>
       <BlurFade delay={0.45} inView>
         <p className="text-md text-zinc-500 mb-5 stagger-hobby leading-relaxed tracking-wider">
-          I dedicate my spare time to exploring mobile development with Swift UI
-          and React Native. Additionally, I am starting to learn Python and PHP,
-          embracing the challenges of being a beginner. I am also passionate
-          about football, enjoying both spectating and participating. This hobby
-          has nurtured vital teamwork abilities and a mindset focused on
-          achieving success, both crucial in sports and in my software
-          development career. Watching movies and series also enhances my
-          understanding of the filmmaking process. Beyond these interests, I
-          excel in making well-informed decisions and have developed a versatile
-          skill set that spans from coding to project management.
+          In my spare time, I’m diving into mobile development with Swift UI and React Native. I’m also starting to learn Python and PHP, enjoying the challenge of being a beginner. Football is another passion of mine—I love playing and watching the game, which has helped me develop teamwork skills and a success-oriented mindset, valuable in both sports and software development. I also enjoy watching movies and series, which has given me an appreciation for the filmmaking process. Beyond these hobbies, I’m good at making informed decisions and have built a versatile skill set, ranging from coding to project management.
         </p>
       </BlurFade>
       <BlurFade delay={0.45} inView>
