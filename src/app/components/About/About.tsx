@@ -18,16 +18,7 @@ export const About = () => {
       </BlurFade>
       <BlurFade delay={0.45} inView>
         <p className="text-md text-zinc-500 mb-5 leading-relaxed tracking-wider">
-          Hey, my name is Yassine, and I use Yass as my nickname across social
-          media. I’m a full-stack web developer based in Italy. With a strong
-          background in both front-end and back-end technologies, I specialize
-          in creating seamless, robust, and scalable web applications. My
-          passion for the entire development stack drives my continuous learning
-          and mastery of new technologies. Beyond coding, I have a keen interest
-          in cybersecurity, particularly in identifying vulnerabilities within
-          big companies' systems. I am always eager to explore and integrate the
-          latest innovations in tech to enhance my projects and ensure they are
-          secure and efficient.
+          Hi, I'm Yassine, but I go by Yass online. I'm a full-stack web developer living in Italy. I work on both front-end and back-end development to build solid and efficient web applications. I’m also interested in cybersecurity, especially in finding vulnerabilities in large companies' systems. I enjoy learning new technologies to improve my projects and keep them secure.
         </p>
       </BlurFade>
       <BlurFade delay={0.35} inView>
