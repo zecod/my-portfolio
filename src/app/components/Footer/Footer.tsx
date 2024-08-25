@@ -1,4 +1,3 @@
-import { Github, Youtube, Linkedin, MoonIcon, ArrowBigUp } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTheme } from "@/components/ui/theme-provider";
 import { Button } from "@/components/ui/button";
