@@ -8,7 +8,7 @@ export const StripeCard = () => {
     >
       <div className="aspect-w-8 aspect-h-8 rounded-xl">
         <img
-          className="w-full object-cover rounded-xl"
+          className="w-full object-cover rounded-xl  brightness-0 dark:invert"
           src={"https://www.vectorlogo.zone/logos/stripe/stripe-ar21.svg"}
           alt="Stripe logo"
         />

@@ -75,7 +75,7 @@ export const Frame = () => {
               <img
                 src={framework.url}
                 alt={framework.title}
-                className="w-auto h-10 grayscale hover:grayscale-0 transition-all"
+                className="w-auto h-10 grayscale dark:grayscale dark:brightness-0 dark:invert dark:opacity-50 rounded"
               />
             </div>
           </BlurFade>

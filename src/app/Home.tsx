@@ -24,7 +24,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <>
       <div className="sticky top-0 z-10 backdrop-blur-md border-b-zinc-100">
         <Navbar />
       </div>
@@ -43,7 +43,7 @@ const Home = () => {
       </div>
 
       <Footer />
-    </div>
+    </>
   );
 };
 
