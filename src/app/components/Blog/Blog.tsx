@@ -1,11 +1,11 @@
 import { BlogNavbar } from "./components/elemnts/NavBar";
-import { Microsoft } from "./components/Microsoft";
-import { NetflixCard } from "./components/NetflixCard";
-import { AppleCard } from "./components/Apple";
-import { StripeCard } from "./components/StripeCard";
 import { ShadcnCard } from "./components/ShadcnCard";
 import { VerceliCard } from "./components/VerceliCard";
 import { Nextjs14Card } from "./components/NextCard";
+// import { Microsoft } from "./components/Microsoft";
+// import { NetflixCard } from "./components/NetflixCard";
+// import { AppleCard } from "./components/Apple";
+// import { StripeCard } from "./components/StripeCard";
 
 const Blog = () => {
   return (
@@ -24,10 +24,10 @@ const Blog = () => {
         <VerceliCard />
         <Nextjs14Card />
         <ShadcnCard />
-        <StripeCard />
+        {/* <StripeCard />
         <Microsoft />
         <NetflixCard />
-        <AppleCard />
+        <AppleCard /> */}
       </div>
     </div>
   );
