@@ -16,8 +16,8 @@ import { FolderOpenDot } from "lucide-react";
 
 const projectData = [
   {
-    title: "Vercelli",
-    ngLink: "vercelli",
+    title: "Verceli",
+    ngLink: "verceli",
     description:
       "Vercelli is a SaaS application focused on text-to-speech (TTS) technology. It converts written text into clear, natural-sounding speech in over 50 languages. The platform includes features like voice cloning and voice isolation to create personalized audio experiences. Although it’s still being developed, we’ve already made significant progress, reducing API response times from 3 seconds to 800 milliseconds. This will enhance user interaction and system performance.",
     techStack: [
@@ -37,12 +37,12 @@ const projectData = [
     ],
     ytLink: null,
     ui: {
-      title: "Vercelli",
+      title: "Verceli",
       description:
         "Vercelli is a text-to-speech project that converts text into speech.",
       header: (
         <div className="h-60 bg-black rounded-md text-white flex items-center justify-center">
-          <h1 className="text-4xl jersey-10-regular">VERCELLI</h1>
+          <h1 className="text-4xl jersey-10-regular">VERCELI</h1>
         </div>
       ),
       className: "md:col-span-2 border-zinc-200 cursor-pointer",
@@ -100,7 +100,7 @@ const projectData = [
       description:
         "LTC AI generates HTML and CSS components automatically with OpenAI integration.",
       header: (
-        <div className="h-60 bg-black rounded-md text-white flex items-center justify-center">
+        <div className="h-60 bg-black  rounded-md text-white flex items-center justify-center">
           <h1 className="text-4xl jersey-10-regular">LTC AI</h1>
         </div>
       ),

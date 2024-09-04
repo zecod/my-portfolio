@@ -139,7 +139,7 @@ const DrawerDialog: React.FC<{ item: Project }> = ({ item }) => {
   return isDesktop ? (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <button className="h-auto text-start w-full sm:flex-1 sm:min-w-[400px] xl:max-w-[420px]">
+        <button className="h-auto text-start w-full sm:flex-1 ">
           <BentoGridItem
             title={item.ui.title}
             description={item.ui.description}
@@ -239,7 +239,12 @@ const DrawerDialog: React.FC<{ item: Project }> = ({ item }) => {
         <ScrollArea className="w-full h-[80vh]">
           <div className="w-full  mx-auto px-5 ">
             {item.ytLink == null ? (
-              <div>Not ready yet</div>
+              <div className="aspect-video w-full rounded-xl bg-gray-100 dark:bg-transparent flex flex-col gap-5 items-center justify-center dark:border">
+                <CloudLightning size={34} />
+                <div className="text-sm text-muted-foreground">
+                  This project is still in development.
+                </div>
+              </div>
             ) : (
               <div className="flex flex-col gap-4 ">
                 <iframe

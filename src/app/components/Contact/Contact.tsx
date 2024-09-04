@@ -13,19 +13,19 @@ export const Contact = () => {
         <MessageCircle />
         Get in Touch
       </h2>
-      <h1 className="text-4xl font-bold leading-relaxed tracking-widest">
+      <div className="text-[32px] leading-[40px] tracking-[-1.3px] font-semibold">
         Let's Connect!
-      </h1>
-      <p className="stagger-intro text-md text-zinc-500 mb-5 leading-relaxed tracking-wider">
+      </div>
+      <div className="text-[20px] leading-[32px] tracking-[-0.4px] text-[#A1A1A1] mt-3">
         I'm really looking forward to diving into fresh projects and bringing my
         skills to the table. If you believe I could be a good match for your
         team, don't hesitate to reach out. I'm here and ready to assist you with
         any task or project you have in mind.
-      </p>
+      </div>
 
       <div className="flex itemes-center gap-2 text-zinc-500">
         <FaLocationDot className="w-6 h-6" />
-        <p>Milan, Italy</p>
+        <p className="italic">Milan, Italy</p>
       </div>
 
       <div className="flex itemes-center gap-2 text-zinc-500">

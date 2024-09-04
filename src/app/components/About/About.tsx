@@ -12,19 +12,24 @@ export const About = () => {
         </h2>
       </BlurFade>
       <BlurFade delay={0.35} inView>
-        <h1 className="scroll-info  text-2xl font-bold leading-relaxed tracking-widest">
+        <div className="text-[32px] leading-[40px] tracking-[-1.3px] font-semibold">
           Full-Stack Developer & Cybersecurity Enthusiast
-        </h1>
+        </div>
       </BlurFade>
       <BlurFade delay={0.45} inView>
-        <p className="text-md text-zinc-500 mb-5 leading-relaxed tracking-wider">
-          Hi, I'm Yassine, but I go by Yass. I'm a full-stack web developer living in Italy. I work on both front-end and back-end development to build solid and efficient web applications. I’m also interested in cybersecurity, especially in finding vulnerabilities in large companies' systems. I enjoy learning new technologies to improve my projects and keep them secure.
-        </p>
+        <div className="text-[20px] leading-[32px] tracking-[-0.4px] text-[#A1A1A1] mt-3">
+          Hi, I'm Yassine, but I go by Yass. I'm a full-stack web developer
+          living in Italy. I work on both front-end and back-end development to
+          build solid and efficient web applications. I’m also interested in
+          cybersecurity, especially in finding vulnerabilities in large
+          companies' systems. I enjoy learning new technologies to improve my
+          projects and keep them secure.
+        </div>
       </BlurFade>
       <BlurFade delay={0.35} inView>
-        <h2 className="text-md text-zinc-500 leading-relaxed tracking-wider">
+        <div className="text-[20px] leading-[32px] tracking-[-0.4px] text-[#A1A1A1] mt-3">
           Companies Where I've Found Vulnerabilities:
-        </h2>
+        </div>
       </BlurFade>
 
       <BlurFade delay={0.45} inView>
