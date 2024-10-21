@@ -11,6 +11,7 @@ import { StripeSEPAFraud } from "./app/components/Blog/pages/Stripe";
 import { Shadcn } from "./app/components/Blog/pages/Shadcn";
 import { VerceliBlog } from "./app/components/Blog/pages/Verceli";
 import { Nextjs14Blog } from "./app/components/Blog/pages/Next";
+import { NewHome } from "./app/Pages/ui/Home";
 
 const App = () => {
   return (
@@ -19,15 +20,15 @@ const App = () => {
         <Routes>
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/azure" element={<Azure />} />
-
           <Route path="/blog/netflix" element={<NetflixVulnerability />} />
           <Route path="/blog/apple" element={<AppleVulnerability />} />
           <Route path="/blog/stripe" element={<StripeSEPAFraud />} />
           <Route path="/blog/shadcn" element={<Shadcn />} />
           <Route path="/blog/verceli" element={<VerceliBlog />} />
           <Route path="/blog/nextjs14" element={<Nextjs14Blog />} />
+
           <Route path="/" element={<Home />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/new" element={<NewHome />} />
           <Route path="*" element={<Notfound />} />
         </Routes>
       </Router>
