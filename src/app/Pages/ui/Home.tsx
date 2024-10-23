@@ -1,8 +1,8 @@
 import { Docks } from "../components/Doker";
 import { About } from "./About";
 import { Hero } from "./Hero";
-import { cn } from "@/lib/utils";
-import GridPattern from "@/components/ui/grid-pattern";
+import { Stack } from "./Stack";
+import { Experience } from "./Expirence";
 
 export const NewHome = () => {
   return (
@@ -10,6 +10,8 @@ export const NewHome = () => {
       <div className="p-5">
         <Hero />
         <About />
+        <Stack />
+        <Experience />
       </div>
       <Docks />
     </div>
