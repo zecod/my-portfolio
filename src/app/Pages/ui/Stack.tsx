@@ -25,8 +25,9 @@ export function Stack() {
           My stack
         </div>
         <div className="font-extralight text-pretty text-[18px] leading-[27px] tracking-[0px] text-muted-foreground">
-          Building fast, scalable applications with a focus on performance and
-          clean design.
+          I build stuff that works fast, doesn’t break, and looks good doing it.
+          I’m all about keeping things simple, clean, and efficient – no fluff,
+          just solid code that gets the job done.
         </div>
         <div className="flex gap-6 mt-4">
           <SiPostgresql size={32} className="text-[#336791]" />
