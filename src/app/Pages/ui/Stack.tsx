@@ -3,6 +3,7 @@
 import { Wrench } from "lucide-react";
 import {
   SiGithub,
+  SiLinux,
   SiMongodb,
   SiNodedotjs,
   SiPostgresql,
@@ -38,6 +39,7 @@ export function Stack() {
           <SiNodedotjs size={32} className="text-[#68A063]" />
           <SiMongodb size={32} className="text-[#4DB33D]" />
           <SiPython size={32} className="text-[#3776AB]" />
+          <SiLinux size={32} />
         </div>
       </div>
     </section>

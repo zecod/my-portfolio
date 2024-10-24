@@ -1,7 +1,6 @@
 "use client";
 
 import { NotebookPen } from "lucide-react";
-import { FaAward, FaShieldAlt } from "react-icons/fa";
 
 export function Experience() {
   return (
@@ -18,18 +17,31 @@ export function Experience() {
         <div className="font-extralight text-pretty text-[16.5px] leading-[27px] tracking-[0px] text-muted-foreground mt-2">
           Currently working on{" "}
           <span className="font-normal text-primary">Verceli</span>, an
-          AI-powered text-to-speech platform. Recognized by{" "}
+          AI-powered text-to-speech platform. I was recognized by{" "}
           <span className="font-normal text-primary">Microsoft</span> on their
-          Security Leaderboard for identifying a critical vulnerability in
-          Azure, and discovered{" "}
+          Security Leaderboard for identifying a critical vulnerability in Azure
+          and also discovered{" "}
           <span className="font-normal text-primary">
             17 other critical vulnerabilities
           </span>{" "}
           across various companies.
         </div>
-        <div className="flex space-x-4 mt-4">
-          <FaAward size={32} className="text-primary" />
-          <FaShieldAlt size={32} className="text-primary" />
+        <div className="flex flex-wrap gap-2 mt-4">
+          <span className="bg-red-200 dark:bg-red-950 text-red-600 px-2 py-1 rounded-full text-xs">
+            Problem Solving
+          </span>
+          <span className="bg-blue-200 dark:bg-blue-950 text-blue-600 px-2 py-1 rounded-full text-xs">
+            AI Integration
+          </span>
+          <span className="bg-green-200 dark:bg-green-950 text-green-600 px-2 py-1 rounded-full text-xs">
+            Security Research
+          </span>
+          <span className="bg-yellow-200 dark:bg-yellow-950 text-yellow-600 px-2 py-1 rounded-full text-xs">
+            Solo Entrepreneur
+          </span>
+          <span className="bg-purple-200 dark:bg-purple-950 text-purple-600 px-2 py-1 rounded-full text-xs">
+            Vulnerability Discovery
+          </span>
         </div>
       </div>
     </section>
