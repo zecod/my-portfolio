@@ -19,8 +19,9 @@ export function Experience() {
           <span className="font-normal text-primary">Verceli</span>, an
           AI-powered text-to-speech platform. I was recognized by{" "}
           <span className="font-normal text-primary">Microsoft</span> on their
-          Security Leaderboard for identifying a critical vulnerability in Azure
-          and also discovered{" "}
+          Security Leaderboard for identifying a critical vulnerability in{" "}
+          <span className="font-normal text-primary">Azure</span> and also
+          discovered{" "}
           <span className="font-normal text-primary">
             17 other critical vulnerabilities
           </span>{" "}
