@@ -1,9 +1,35 @@
 "use client";
 
 import { TrafficCone } from "lucide-react";
-import { SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiReact } from "react-icons/si";
 
 export function Projects() {
+  const projectData = [
+    {
+      title: "Verceli",
+      description: "AI-powered text-to-speech platform for lifelike audio.",
+      imgSrc:
+        "https://snjzgrnhlqngthyxcutc.supabase.co/storage/v1/object/public/porfolio/img/verceli-lights.png",
+      icon: <SiReact size={18} />,
+    },
+    {
+      title: "Genio Mind",
+      description:
+        "Chatbot for generating SaaS ideas with memory registration for fine-tuning.",
+      imgSrc:
+        "https://snjzgrnhlqngthyxcutc.supabase.co/storage/v1/object/public/porfolio/img/genio-mind.png",
+      icon: <SiReact size={18} />,
+    },
+    {
+      title: "Next Web",
+      description:
+        "A web development agency concept built with a Moroccan team, just for fun.",
+      imgSrc:
+        "https://snjzgrnhlqngthyxcutc.supabase.co/storage/v1/object/public/porfolio/img/NextWeb.png",
+      icon: <SiReact size={18} />,
+    },
+  ];
+
   return (
     <section className="mt-40 flex items-start gap-4 mb-[200px]">
       <div className="flex flex-col items-center h-full">
@@ -19,47 +45,31 @@ export function Projects() {
           A few things I’ve built and worked on.
         </p>
 
-        <div className="mt-4 grid grid-cols-2 gap-5">
-          <div className="border rounded-lg overflow-hidden">
-            <div className="aspect-video relative">
-              <img
-                src="https://snjzgrnhlqngthyxcutc.supabase.co/storage/v1/object/public/porfolio/img/verceli-lights.png"
-                className="aspect-video"
-              />
-
-              <div className="absolute bottom-5 left-5 flex items-center gap-2">
-                <div className=" bg-black w-8 h-8 flex items-center justify-center text-white rounded-md">
-                  <SiReact size={18} />
+        <div className="mt-4 grid md:grid-cols-2 gap-5">
+          {projectData.map((project, index) => (
+            <div key={index} className="border rounded-lg overflow-hidden">
+              <div className="aspect-video relative">
+                <img
+                  src={project.imgSrc}
+                  className="aspect-video"
+                  alt={project.title}
+                />
+                <div className="absolute bottom-5 left-5 flex items-center gap-2">
+                  <div className="bg-black w-8 h-8 flex items-center justify-center text-white rounded-md">
+                    {project.icon}
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="mt-2 p-4 flex flex-col gap-2">
-              <h3 className="text-md font-semibold text-primary">Verceli</h3>
-              <p className="text-sm text-muted-foreground line-clamp-2">
-                "AI-powered text-to-speech platform for lifelike audio."
-              </p>
-            </div>
-          </div>
-          <div className="border rounded-lg overflow-hidden">
-            <div className="aspect-video relative">
-              <img
-                src="https://snjzgrnhlqngthyxcutc.supabase.co/storage/v1/object/public/porfolio/img/verceli-lights.png"
-                className="aspect-video"
-              />
-
-              <div className="absolute bottom-5 left-5 flex items-center gap-2">
-                <div className=" bg-black w-8 h-8 flex items-center justify-center text-white rounded-md">
-                  <SiReact size={18} />
-                </div>
+              <div className="mt-2 p-4 flex flex-col gap-2">
+                <h3 className="text-md font-semibold text-primary">
+                  {project.title}
+                </h3>
+                <p className="text-sm text-muted-foreground line-clamp-2">
+                  {project.description}
+                </p>
               </div>
             </div>
-            <div className="mt-2 p-4 flex flex-col gap-2">
-              <h3 className="text-md font-semibold text-primary">Verceli</h3>
-              <p className="text-sm text-muted-foreground line-clamp-2">
-                "AI-powered text-to-speech platform for lifelike audio."
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

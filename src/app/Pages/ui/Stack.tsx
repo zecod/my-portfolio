@@ -30,7 +30,7 @@ export function Stack() {
           I’m all about keeping things simple, clean, and efficient – no fluff,
           just solid code that gets the job done.
         </div>
-        <div className="flex gap-6 mt-4">
+        <div className="flex gap-6 mt-4 flex-wrap">
           <SiPostgresql size={32} className="text-[#336791]" />
           <SiTypescript size={32} className="text-[#3178C6]" />
           <SiGithub size={32} />
