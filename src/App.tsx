@@ -12,6 +12,7 @@ import { Shadcn } from "./app/components/Blog/pages/Shadcn";
 import { VerceliBlog } from "./app/components/Blog/pages/Verceli";
 import { Nextjs14Blog } from "./app/components/Blog/pages/Next";
 import { NewHome } from "./app/Pages/ui/Home";
+import Projects from "./app/Pages/projects-page/Projects";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
 
           <Route path="/" element={<Home />} />
           <Route path="/new" element={<NewHome />} />
+          <Route path="/new/project" element={<Projects />} />
           <Route path="*" element={<Notfound />} />
         </Routes>
       </Router>
