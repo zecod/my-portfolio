@@ -1,7 +1,7 @@
 "use client";
 
 import { TrafficCone } from "lucide-react";
-import { SiReact } from "react-icons/si";
+import { SiJquery, SiReact } from "react-icons/si";
 
 export function Projects() {
   const projectData = [
@@ -27,6 +27,14 @@ export function Projects() {
       imgSrc:
         "https://snjzgrnhlqngthyxcutc.supabase.co/storage/v1/object/public/porfolio/img/NextWeb.png",
       icon: <SiReact size={18} />,
+    },
+    {
+      title: "Rona Li",
+      description:
+        "Platform for file uploads, URL shortening, and note-taking.",
+      imgSrc:
+        "https://snjzgrnhlqngthyxcutc.supabase.co/storage/v1/object/public/porfolio/img/rona-li.png",
+      icon: <SiJquery size={18} />,
     },
   ];
 

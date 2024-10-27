@@ -65,9 +65,8 @@ export const Card = () => {
             </Label>
             <div className="border p-3 rounded-xl flex justify-between items-center">
               <div>
-                <h3>Mario Rossi</h3>
-                <p className="text-xs">Via tonale, 22</p>
-                <p className="text-xs">Milano 20125</p>
+                <h3 className="text-primary">Mario Rossi</h3>
+                <p className="text-xs">Via tonale, 22, Milan, italy</p>
               </div>
               <a className="text-blue-500 text-xs cursor-pointer">Cambia</a>
             </div>
