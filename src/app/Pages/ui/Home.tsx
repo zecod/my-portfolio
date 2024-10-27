@@ -1,9 +1,10 @@
 import { Docks } from "../components/Doker";
-import { About } from "./About";
-import { Hero } from "./Hero";
-import { Stack } from "./Stack";
-import { Experience } from "./Expirence";
+import { About } from "./setcions/About";
+import { Hero } from "./setcions/Hero";
+import { Stack } from "./setcions/Stack";
+import { Experience } from "./setcions/Expirence";
 import { Projects } from "./projects/Projects";
+import { UIComponents } from "./setcions/Components";
 
 export const NewHome = () => {
   return (
@@ -14,6 +15,7 @@ export const NewHome = () => {
         <Stack />
         <Experience />
         <Projects />
+        <UIComponents />
       </div>
       <Docks />
     </div>
