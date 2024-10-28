@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "./components/ui/theme-provider";
 import "./App.css";
-import { NewHome } from "./app/Pages/ui/Home";
+import { NewHome } from "./app/Home";
 import Projects from "./app/Pages/projects-page/Projects";
 import Notfound from "./app/404";
 
