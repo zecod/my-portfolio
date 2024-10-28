@@ -1,7 +1,8 @@
 "use client";
 
+import React, { forwardRef, useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Clock1 } from "lucide-react";
+import { ArrowLeft, Clock1, User } from "lucide-react";
 import {
   SiGooglecloud,
   SiMicrosoftazure,
@@ -18,12 +19,107 @@ import {
   SiVercel,
   SiNginx,
   SiRadixui,
+  SiGooglegemini,
 } from "react-icons/si";
 import { Docks } from "../components/Doker";
+import { cn } from "@/lib/utils";
+import { AnimatedBeam } from "@/components/ui/animated-beam";
+
+const Circle = forwardRef<
+  HTMLDivElement,
+  { className?: string; children?: React.ReactNode }
+>(({ className, children }, ref) => {
+  return (
+    <div
+      ref={ref}
+      className={cn(
+        "z-10 flex size-12 items-center justify-center rounded-full border-2 bg-white dark:bg-black  p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
+        className
+      )}
+    >
+      {children}
+    </div>
+  );
+});
+
+Circle.displayName = "Circle";
+
+export function AnimatedBeams() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const div1Ref = useRef<HTMLDivElement>(null);
+  const div2Ref = useRef<HTMLDivElement>(null);
+  const div3Ref = useRef<HTMLDivElement>(null);
+  const div4Ref = useRef<HTMLDivElement>(null);
+
+  return (
+    <div
+      className="relative flex w-full items-center justify-center overflow-hidden p-10  mt-10"
+      ref={containerRef}
+    >
+      <div className="flex size-full flex-col items-stretch justify-between gap-10">
+        <div className="flex flex-row items-center justify-between">
+          <Circle ref={div1Ref}>
+            <div className="size-6">
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+          </Circle>
+
+          <div className="flex flex-col gap-5">
+            <Circle ref={div2Ref}>
+              <SiOpenai />
+            </Circle>
+            <Circle ref={div3Ref}>
+              <SiGooglegemini />
+            </Circle>
+          </div>
+
+          <Circle ref={div4Ref}>
+            <User />
+          </Circle>
+        </div>
+      </div>
+
+      <AnimatedBeam
+        duration={2.5}
+        containerRef={containerRef}
+        fromRef={div1Ref}
+        toRef={div2Ref}
+      />
+      <AnimatedBeam
+        duration={3}
+        containerRef={containerRef}
+        fromRef={div1Ref}
+        toRef={div3Ref}
+      />
+
+      <AnimatedBeam
+        duration={3}
+        containerRef={containerRef}
+        fromRef={div2Ref}
+        toRef={div4Ref}
+      />
+      <AnimatedBeam
+        duration={3}
+        containerRef={containerRef}
+        fromRef={div3Ref}
+        toRef={div4Ref}
+      />
+    </div>
+  );
+}
 
 const Projects = () => {
   return (
-    <div className={`relative max-w-[800px] m-auto`}>
+    <div className={`relative max-w-[800px] m-auto p-5 md:p-0`}>
       {/* Back Button */}
       <div className="mt-10">
         <Button
@@ -146,6 +242,8 @@ const Projects = () => {
             closer to natural human speech.
           </p>
         </div>
+
+        <AnimatedBeams />
 
         {/* Engineering & Cloud Solutions */}
         <div className="my-20">
