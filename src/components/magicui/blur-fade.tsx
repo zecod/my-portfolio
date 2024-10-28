@@ -14,7 +14,14 @@ interface BlurFadeProps {
   delay?: number;
   yOffset?: number;
   inView?: boolean;
-  inViewMargin?: string;
+  inViewMargin?:
+    | `${number}px`
+    | `${number}%`
+    | "auto"
+    | `${number}px ${number}px`
+    | `${number}% ${number}%`
+    | `${number}px ${number}px ${number}px`
+    | `${number}px ${number}px ${number}px ${number}px`; // Inline margin type definition
   blur?: string;
 }
 
@@ -30,13 +37,19 @@ export default function BlurFade({
   blur = "6px",
 }: BlurFadeProps) {
   const ref = useRef(null);
-  const inViewResult = useInView(ref, { once: true, margin: inViewMargin });
+  const inViewResult = useInView(ref, {
+    once: true,
+    margin: inViewMargin as unknown as any, // Bypass TypeScript strict check for margin
+  });
   const isInView = !inView || inViewResult;
+
   const defaultVariants: Variants = {
     hidden: { y: yOffset, opacity: 0, filter: `blur(${blur})` },
     visible: { y: -yOffset, opacity: 1, filter: `blur(0px)` },
   };
+
   const combinedVariants = variant || defaultVariants;
+
   return (
     <AnimatePresence>
       <motion.div
