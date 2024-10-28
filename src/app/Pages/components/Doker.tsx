@@ -1,5 +1,5 @@
 import React from "react";
-import { CalendarIcon, HomeIcon, MailIcon, PencilIcon } from "lucide-react";
+import { CalendarIcon, HomeIcon, MailIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -61,26 +61,22 @@ const Icons = {
 
 const DATA = {
   navbar: [
-    { href: "#", icon: HomeIcon, label: "Home" },
-    { href: "#", icon: PencilIcon, label: "Blog" },
+    { href: "/", icon: HomeIcon, label: "Home" },
+    // { href: "#", icon: PencilIcon, label: "Blog" },
   ],
   contact: {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "#",
+        url: "https://github.com/zecod",
         icon: Icons.github,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "#",
+        url: "https://linkedin.com/in/yasinel",
         icon: Icons.linkedin,
       },
-      X: {
-        name: "X",
-        url: "#",
-        icon: Icons.x,
-      },
+
       email: {
         name: "Send Email",
         url: "#",
@@ -131,6 +127,7 @@ export function Docks() {
                 <TooltipTrigger asChild>
                   <a
                     href={social.url}
+                    target="_blank"
                     aria-label={social.name}
                     className={cn(
                       buttonVariants({ variant: "ghost", size: "icon" }),
