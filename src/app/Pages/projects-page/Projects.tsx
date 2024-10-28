@@ -115,7 +115,7 @@ const Projects = () => {
               PostgreSQL
             </div>
             <div className="flex items-center gap-1 px-3 py-1 border rounded-full text-sm">
-              <SiOpenai size={16} className="text-gray-500" />
+              <SiOpenai size={16} />
               OpenAI
             </div>
             <div className="flex items-center gap-1 px-3 py-1 border rounded-full text-sm">
@@ -133,30 +133,36 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* AI & Machine Learning */}
+        {/* AI & Model Tuning */}
         <div className="mt-6">
-          <h4 className="font-semibold text-lg">AI & Machine Learning</h4>
-          <p className="text-muted-foreground text-sm mt-2">
-            <span className="text-blue-500 font-medium">AI</span> is at the core
-            of Verceli, allowing for customizable voices that match various
-            tones and emotions. Advanced text-to-speech models enhance user
-            experience by producing{" "}
-            <span className="font-semibold">lifelike audio</span>.
+          <h4 className="font-semibold text-lg">AI & Model Tuning</h4>
+          <p className="font-extralight text-pretty text-[18px] leading-[27px] tracking-[0px] mt-2">
+            I'm currently working on fine-tuning models like{" "}
+            <span className="text-blue-500 font-medium">Gemini</span> and{" "}
+            <span className="text-blue-500 font-medium">GPT-4</span> to produce
+            high-quality audio output. This tuning enables Verceli to generate
+            voices that are not only lifelike but also customizable across a
+            range of tones and emotions, bringing the text-to-speech experience
+            closer to natural human speech.
           </p>
         </div>
 
-        {/* Challenges & Cloud Engineering */}
-        <div className="mt-6">
+        {/* Engineering & Cloud Solutions */}
+        <div className="my-20">
           <h4 className="font-semibold text-lg">
-            Challenges & Cloud Engineering
+            Engineering & Cloud Solutions
           </h4>
-          <p className="text-muted-foreground text-sm mt-2">
-            Developing Verceli required solving challenges in{" "}
-            <span className="font-semibold">scaling</span> and managing{" "}
-            <span className="font-semibold">latency</span>. Utilizing a{" "}
-            <span className="text-cyan-500">serverless</span> architecture on
-            Google Cloud ensured that Verceli could handle high-demand use cases
-            smoothly, with optimizations for performance and cost efficiency.
+          <p className="font-extralight text-pretty text-[18px] leading-[27px] tracking-[0px] mt-2">
+            Building the back end for Verceli involved creating a robust
+            infrastructure that manages everything from{" "}
+            <span className="font-semibold">payments</span> and{" "}
+            <span className="font-semibold">authentication</span> to{" "}
+            <span className="font-semibold">data storage</span> and audio
+            processing. By storing generated audio in the cloud, users can
+            easily reuse their custom voices, saving costs and enhancing
+            efficiency. This setup not only reduces server load but also
+            optimizes storage expenses, allowing users to access their files on
+            demand.
           </p>
         </div>
       </div>
