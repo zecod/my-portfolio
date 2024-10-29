@@ -7,7 +7,6 @@ import {
   SiMongodb,
   SiNodedotjs,
   SiPostgresql,
-  SiPython,
   SiReact,
   SiSupabase,
   SiTailwindcss,
