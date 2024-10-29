@@ -2,7 +2,7 @@
 
 import React, { forwardRef, useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Clock1, User } from "lucide-react";
+import { ArrowLeft, Clock1, Play, User } from "lucide-react";
 import {
   SiGooglecloud,
   SiMicrosoftazure,
@@ -24,6 +24,7 @@ import {
 import { Docks } from "../components/Doker";
 import { cn } from "@/lib/utils";
 import { AnimatedBeam } from "@/components/ui/animated-beam";
+import { Link } from "react-router-dom";
 
 const Circle = forwardRef<
   HTMLDivElement,
@@ -125,6 +126,7 @@ const Projects = () => {
         <Button
           className="p-0 gap-2 hover:bg-transparent text-sm text-muted-foreground"
           variant={"ghost"}
+          onClick={() => window.location.assign("/")}
         >
           <ArrowLeft size={14} />
           Go Back
@@ -141,8 +143,24 @@ const Projects = () => {
 
       {/* Project Info */}
       <div className="mt-10">
-        <div className="font-bold text-[42px] leading-[52px] tracking-[-1.9px] my-4">
-          Verceli
+        <div className="flex items-center justify-between">
+          <div className="font-bold text-[42px] leading-[52px] tracking-[-1.9px] my-4">
+            Verceli
+          </div>
+
+          <Link
+            to={"https://youtu.be/xKArScAk8AE?si=x1W4hqU5x_NL1JEg"}
+            target="_blank"
+          >
+            <Button
+              variant={"default"}
+              size={"lg"}
+              className="gap-2 px-4 rounded-full"
+            >
+              <Play size={18} />
+              Watch Demo
+            </Button>
+          </Link>
         </div>
         <div className="flex items-center justify-between my-8">
           <div className="flex items-center gap-2 text-sm text-muted-foreground font-light">

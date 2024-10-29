@@ -9,6 +9,7 @@ import {
   SiPostgresql,
   SiPython,
   SiReact,
+  SiSupabase,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
@@ -38,8 +39,8 @@ export function Stack() {
           <SiTailwindcss size={32} className="text-[#38BDF8]" />
           <SiNodedotjs size={32} className="text-[#68A063]" />
           <SiMongodb size={32} className="text-[#4DB33D]" />
-          <SiPython size={32} className="text-[#3776AB]" />
           <SiLinux size={32} />
+          <SiSupabase size={32} className="text-[#3FCF8E]" />
         </div>
       </div>
     </section>
