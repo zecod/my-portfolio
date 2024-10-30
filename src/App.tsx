@@ -6,6 +6,7 @@ import "./App.css";
 import { NewHome } from "./app/Home";
 import { Verceli } from "./app/Pages/projects-page/Verceli";
 import { Genio } from "./app/Pages/projects-page/GenioMind";
+import { NextWeb } from "./app/Pages/projects-page/Next";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/" element={<NewHome />} />
           <Route path="/project/verceli" element={<Verceli />} />
           <Route path="/project/genio" element={<Genio />} />
+          <Route path="/project/next" element={<NextWeb />} />
           <Route path="*" element={<Notfound />} />
         </Routes>
       </Router>
