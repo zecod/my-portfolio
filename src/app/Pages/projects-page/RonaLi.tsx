@@ -1,14 +1,11 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Clock1, Eye, Play } from "lucide-react";
+import { ArrowLeft, Clock1, Play } from "lucide-react";
 import {
-  SiReact,
   SiMongodb,
-  SiTailwindcss,
   SiNodedotjs,
   SiExpress,
-  SiTypescript,
   SiHtml5,
   SiJavascript,
   SiCss3,
