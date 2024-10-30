@@ -1,9 +1,11 @@
+import Notfound from "./app/404";
+
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { ThemeProvider } from "./components/ui/theme-provider";
 import "./App.css";
 import { NewHome } from "./app/Home";
-import Projects from "./app/Pages/projects-page/Projects";
-import Notfound from "./app/404";
+import { Verceli } from "./app/Pages/projects-page/Verceli";
+import { Genio } from "./app/Pages/projects-page/GenioMind";
 
 const App = () => {
   return (
@@ -11,7 +13,8 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" element={<NewHome />} />
-          <Route path="/new/project" element={<Projects />} />
+          <Route path="/project/verceli" element={<Verceli />} />
+          <Route path="/project/genio" element={<Genio />} />
           <Route path="*" element={<Notfound />} />
         </Routes>
       </Router>
