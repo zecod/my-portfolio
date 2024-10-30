@@ -1,16 +1,26 @@
 "use client";
 
 import { TrafficCone } from "lucide-react";
+import { ReactNode } from "react";
 import { SiJquery, SiReact } from "react-icons/si";
 
+interface ProjectType {
+  title: string;
+  description: string;
+  imgSrc: string;
+  icon: ReactNode;
+  link: string;
+}
+
 export function Projects() {
-  const projectData = [
+  const projectData: ProjectType[] = [
     {
       title: "Verceli",
       description: "AI-powered text-to-speech platform for lifelike audio.",
       imgSrc:
         "https://snjzgrnhlqngthyxcutc.supabase.co/storage/v1/object/public/porfolio/img/verceli-lights.png",
       icon: <SiReact size={18} />,
+      link: "/project/verceli",
     },
     {
       title: "Genio Mind",
@@ -19,6 +29,7 @@ export function Projects() {
       imgSrc:
         "https://snjzgrnhlqngthyxcutc.supabase.co/storage/v1/object/public/porfolio/img/genio-mind.png",
       icon: <SiReact size={18} />,
+      link: "/project/genio",
     },
     {
       title: "Next Web",
@@ -27,6 +38,7 @@ export function Projects() {
       imgSrc:
         "https://snjzgrnhlqngthyxcutc.supabase.co/storage/v1/object/public/porfolio/img/NextWeb.png",
       icon: <SiReact size={18} />,
+      link: "/project/next",
     },
     {
       title: "Rona Li",
@@ -35,6 +47,7 @@ export function Projects() {
       imgSrc:
         "https://snjzgrnhlqngthyxcutc.supabase.co/storage/v1/object/public/porfolio/img/rona-li.png",
       icon: <SiJquery size={18} />,
+      link: "/project/rona",
     },
   ];
 
@@ -55,7 +68,11 @@ export function Projects() {
 
         <div className="mt-4 grid md:grid-cols-2 gap-5">
           {projectData.map((project, index) => (
-            <div key={index} className="border rounded-lg overflow-hidden">
+            <div
+              key={index}
+              className="border rounded-lg overflow-hidden cursor-pointer"
+              onClick={() => window.location.assign(project.link)}
+            >
               <div className="aspect-video relative">
                 <img
                   src={project.imgSrc}

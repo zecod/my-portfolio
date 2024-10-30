@@ -7,6 +7,7 @@ import { NewHome } from "./app/Home";
 import { Verceli } from "./app/Pages/projects-page/Verceli";
 import { Genio } from "./app/Pages/projects-page/GenioMind";
 import { NextWeb } from "./app/Pages/projects-page/Next";
+import RonaLi from "./app/Pages/projects-page/RonaLi";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/project/verceli" element={<Verceli />} />
           <Route path="/project/genio" element={<Genio />} />
           <Route path="/project/next" element={<NextWeb />} />
+          <Route path="/project/rona" element={<RonaLi />} />
           <Route path="*" element={<Notfound />} />
         </Routes>
       </Router>
